@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="trip">
+    <item>Exotic Maluku</item>
+    <item>Sailing Komodo</item>
+    <item>Derawan Island</item>
+    <item>Raja Ampat Trip</item>
+    <item>Labengki Trip</item>
+    <item>Talisayan Whaleshark</item>
+    </string-array>
+</resources>
