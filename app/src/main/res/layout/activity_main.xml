@@ -1,70 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl4027.formtrip.MainActivity"
     android:weightSum="1"
-    android:orientation="vertical">
+        tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl4027.formtrip.MainActivity">
 
     <ImageView
-        android:layout_width="348dp"
-        android:layout_height="1dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/coba11"
-        android:layout_weight="0.38" />
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.35"
+        android:src="@drawable/bromo" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
 
         <TextView
+            android:id="@+id/textViewNama"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
-            android:text="Nama"
-            style="@style/Base.TextAppearance.AppCompat.Body2"
-            android:id="@+id/textViewNama" />
+            android:text="Nama" />
 
         <EditText
-            android:layout_weight="0.7"
+            android:id="@+id/editText"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
             android:layout_gravity="center_horizontal"
-            style="@style/Base.TextAppearance.AppCompat.Body2" />
+            android:layout_weight="0.7" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
 
         <TextView
+            android:id="@+id/textView"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pilih Trip"
             android:layout_weight="0.3"
-            android:id="@+id/textView"
-            style="@style/Base.TextAppearance.AppCompat.Body2" />
+            android:text="Pilih Trip" />
 
         <Spinner
-            android:layout_width="wrap_content"
-            android:layout_weight="0.7"
-            android:layout_height="wrap_content"
             android:id="@+id/spinner"
-            android:entries="@array/trip"
-            style="@style/Base.TextAppearance.AppCompat.Body2" />
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:entries="@array/trip" />
     </LinearLayout>
 
     <LinearLayout
@@ -75,10 +80,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.13">
+        android:layout_weight="0.34"
+        android:orientation="horizontal">
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -86,123 +91,131 @@
             android:layout_weight="0.02">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pilih Paket"
-                android:layout_weight="0.3"
                 android:id="@+id/textView2"
-                style="@style/Base.TextAppearance.AppCompat.Body2"/>
-
-            <RadioButton
+                style="@style/Base.TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Open Trip"
+                android:layout_weight="0.3"
+                android:text="Pilih Paket" />
+
+            <RadioButton
                 android:id="@+id/radioButton"
-                style="@style/Base.TextAppearance.AppCompat.Body2"/>
-
-            <RadioButton
+                style="@style/Base.TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Private"
+                android:text="Open Trip" />
+
+            <RadioButton
                 android:id="@+id/radioButton2"
-                style="@style/Base.TextAppearance.AppCompat.Body2"/>
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private" />
         </RadioGroup>
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="0.02">
+            android:layout_weight="0.02"
+            android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ektra"
                 android:id="@+id/textView3"
-                style="@style/Base.TextAppearance.AppCompat.Body2"/>
-
-            <CheckBox
+                style="@style/Base.TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alat Snorkeling"
+                android:text="Ektra" />
+
+            <CheckBox
                 android:id="@+id/checkBox"
-                style="@style/Base.TextAppearance.AppCompat.Body2"/>
-
-            <CheckBox
+                style="@style/Base.TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Photographer"
+                android:text="Alat Snorkeling" />
+
+            <CheckBox
                 android:id="@+id/checkBox2"
-                style="@style/Base.TextAppearance.AppCompat.Body2"/>
-
-            <CheckBox
+                style="@style/Base.TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kamera"
+                android:text="Photographer" />
+
+            <CheckBox
                 android:id="@+id/checkBox3"
-                style="@style/Base.TextAppearance.AppCompat.Body2"/>
-
-            <CheckBox
+                style="@style/Base.TextAppearance.AppCompat.Body2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kapal"
+                android:text="Kamera" />
+
+            <CheckBox
                 android:id="@+id/checkBox4"
-                style="@style/Base.TextAppearance.AppCompat.Body2"/>
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kapal" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
 
         android:weightSum="1">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jadwal Keberangkatan : "
             android:id="@+id/textView4"
-            android:layout_weight="0.03"
-            style="@style/Base.TextAppearance.AppCompat.Body2"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tgl"
-            android:id="@+id/textView5"
-            android:layout_weight="0.04"
-            style="@style/Base.TextAppearance.AppCompat.Body2"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText2"
-            android:layout_weight="0.02"
-            style="@style/Base.TextAppearance.AppCompat.Body2"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bln"
             style="@style/Base.TextAppearance.AppCompat.Body2"
-            android:id="@+id/textView6"
-            android:layout_weight="0.04" />
-
-        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="Jadwal Keberangkatan : " />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:text="Tgl" />
+
+        <EditText
+            android:id="@+id/editText2"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:text="Bln" />
+
+        <EditText
             android:id="@+id/editText3"
             style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="0.03" />
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/button"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ayo berangkat!"
-        style="@style/Base.TextAppearance.AppCompat.Body2"
-        android:id="@+id/button" />
+        android:text="Ayo berangkat!" />
+
+        <TextView
+            android:id="@+id/textViewH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:text="hasil" />
 
 </LinearLayout>
+</ScrollView>
