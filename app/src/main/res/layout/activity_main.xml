@@ -82,7 +82,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.34"
+        android:layout_weight="20.57"
         android:orientation="horizontal">
 
         <RadioGroup
@@ -113,47 +113,6 @@
                 android:text="Private" />
         </RadioGroup>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.02"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView3"
-                style="@style/Base.TextAppearance.AppCompat.Body2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ektra" />
-
-            <CheckBox
-                android:id="@+id/checkBox"
-                style="@style/Base.TextAppearance.AppCompat.Body2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Alat Snorkeling" />
-
-            <CheckBox
-                android:id="@+id/checkBox2"
-                style="@style/Base.TextAppearance.AppCompat.Body2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Photographer" />
-
-            <CheckBox
-                android:id="@+id/checkBox3"
-                style="@style/Base.TextAppearance.AppCompat.Body2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kamera" />
-
-            <CheckBox
-                android:id="@+id/checkBox4"
-                style="@style/Base.TextAppearance.AppCompat.Body2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kapal" />
-        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -162,6 +121,7 @@
         android:orientation="horizontal"
 
         android:weightSum="1">
+
         <TextView
             android:id="@+id/textView4"
             style="@style/Base.TextAppearance.AppCompat.Body2"
@@ -203,12 +163,55 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button"
-        style="@style/Base.TextAppearance.AppCompat.Body2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ayo berangkat!" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.35"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ektra" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alat Snorkeling" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photographer" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kamera" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kapal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Base.TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayo berangkat!" />
 
         <TextView
             android:id="@+id/textViewH"
@@ -217,5 +220,5 @@
             android:layout_weight="0.35"
             android:text="hasil" />
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>
